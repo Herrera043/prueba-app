@@ -1,4 +1,4 @@
-import React from 'react';
+import { registerRootComponent } from 'expo';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './src/screens/HomeScreen';
@@ -19,4 +19,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default registerRootComponent(App);
